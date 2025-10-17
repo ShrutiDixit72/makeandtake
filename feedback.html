@@ -1,9 +1,10 @@
-
+s
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bookstore - Home</title>
+<title>Bookstore - Feedback</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,10 +27,28 @@
 
 
 <main class="info">
-<h2>Welcome to The Classic Bookstore</h2>
-<p>We're delighted to have you here. Browse our curated collection, register to become a valued customer, or leave feedback about our website. Happy reading!</p>
+<h2>Feedback</h2>
+<form id="fbForm" onsubmit="validateFeedback(event)">
+<div class="form-row">
+<label>
+Your Name<br>
+<input type="text" id="fbName" name="fbName" placeholder="Full name">
+</label>
+</div>
+<div style="margin-top:12px">
+<label>
+Your Feedback<br>
+<textarea id="fbText" name="fbText" rows="6" placeholder="Write your feedback here"></textarea>
+</label>
+</div>
+<div style="margin-top:12px">
+<button type="submit">SUBMIT</button>
+<div id="fbError" class="error" aria-live="polite"></div>
+</div>
+</form>
 </main>
 <div class="footer">&copy; 2025 The Classic Bookstore</div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

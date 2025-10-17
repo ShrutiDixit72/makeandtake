@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bookstore - Customer Registration</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="logo">BS</div>
+<div>
+<div class="brand">The Classic Bookstore</div>
+<div style="font-size:12px;opacity:0.9">Books • Authors • Reading</div>
+</div>
+</header>
+
+
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="listofbooks.html">List of Books</a>
+<a href="register.html">Customer Registration</a>
+<a href="feedback.html">Feedback</a>
+</nav>
+
+
+<main class="info">
+<h2>Customer Registration</h2>
+<form id="regForm" onsubmit="validateRegistration(event)">
+<div class="form-row">
+<label>
+Name of Customer<br>
+<input type="text" id="custName" name="custName" placeholder="Full name">
+</label>
+<label>
+Interest in Books<br>
+<select id="interest" name="interest">
+<option value="">-- Select --</option>
+<option>Fiction</option>
+<option>Non-fiction</option>
+<option>Science & Technology</option>
+<option>Biographies</option>
+<option>Comics</option>
+</select>
+</label>
+</div>
+<div style="margin-top:12px">
+<label>
+Contact Number<br>
+<input type="tel" id="contact" name="contact" placeholder="Digits only">
+</label>
+</div>
+<div style="margin-top:12px">
+<button type="submit">SUBMIT</button>
+<div id="regError" class="error" aria-live="polite"></div>
+</div>
+</form>
+</main>
+<div class="footer">&copy; 2025 The Classic Bookstore</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+/* styles.css - shared by all pages */
+:root{
+--header-bg:#004b6e;
+--link-bg:#f0f4f8;
+--content-bg:#ffffff;
+--max-width:960px;
+}
+*{box-sizing:border-box;font-family:Arial, sans-serif}
+body{background:#e9eef3;margin:0;padding:20px;display:flex;justify-content:center}
+.container{width:100%;max-width:var(--max-width);background:var(--content-bg);box-shadow:0 6px 18px rgba(0,0,0,0.08);border-radius:8px;overflow:hidden}
+.header{background:var(--header-bg);color:#fff;padding:18px 24px;display:flex;align-items:center;gap:12px}
+.logo{width:52px;height:52px;border-radius:8px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-weight:700}
+.brand{font-size:20px;font-weight:700}
+.nav{background:var(--link-bg);padding:12px 20px;display:flex;gap:14px}
+.nav a{color:#003b55;text-decoration:none;font-weight:600}
+.nav a:hover{text-decoration:underline}
+.info{padding:22px}
+.info h2{margin-top:0}
+.table-responsive{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th,td{padding:10px;border:1px solid #ddd;text-align:left}
+th{background:#f5f7fa}
+.form-row{display:flex;gap:12px;flex-wrap:wrap}
+.form-row label{flex:1 1 220px}
+input[type=text], input[type=tel], select, textarea{width:100%;padding:8px;border-radius:4px;border:1px solid #cfd8df}
+button{padding:10px 16px;border-radius:6px;border:none;background:#0077b6;color:#fff;font-weight:700;cursor:pointer}
+.error{color:#b00020;margin-top:8px}
+.footer{padding:12px 20px;background:#fbfdff;color:#333;font-size:13px}
+@media (max-width:520px){.header{padding:12px}.nav{flex-direction:column;gap:8px}}
